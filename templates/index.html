@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Predict Digit
+{% endblock %}
+
+{% block body %}
+
+<canvas id="myCanvas" width="280px" height="280px"></canvas>
+<form>
+    <input class='clear-button' type="button" value='Clear' onclick="clearCanv()">
+    <input class="predict-button" type="button" value="Predict" onclick="save()">
+</form>
+<div id="predict"></div> 
+      
+      
+{% endblock %}
